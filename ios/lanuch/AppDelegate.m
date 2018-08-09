@@ -37,7 +37,8 @@
   
   // 系统自带启动页之后跳转到自定义启动页面
   ViewController *forthViewVC = [[ViewController alloc]init];
-  [self.nav pushViewController:forthViewVC animated:YES];
+  //设置不显示跳转动画
+  [self.nav pushViewController:forthViewVC animated:NO];
   
   return YES;
 }
